@@ -71,7 +71,7 @@ SetWorkingDir, %A_ScriptDir%
 			send, {Enter}
 			send, %url%
 		
-
+			;test
             ;Filter
             send, {F6}
             send, ^{a}
