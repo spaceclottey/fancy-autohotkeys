@@ -1,6 +1,14 @@
 #SingleInstance, Force
 SendMode Input
 SetWorkingDir, %A_ScriptDir%
+
+
+GroupAdd, SuperMemo, ahk_class TBrowser ;Browser
+GroupAdd, SuperMemo, ahk_class TContents ;Content Window (Knowledge Tree)
+GroupAdd, SuperMemo, ahk_class TElWind ;Element window
+GroupAdd, SuperMemo, ahk_class TSMMain ;Toolbar	
+GroupAdd, SuperMemo, ahk_exe PluginHost.exe ; PDF reader
+
 ;———————————————————Quick Import———————————————————
 
 			;you need to have articleparser as your first bookmark
@@ -71,7 +79,6 @@ SetWorkingDir, %A_ScriptDir%
 			send, {Enter}
 			send, %url%
 		
-			;test
             ;Filter
             send, {F6}
             send, ^{a}
@@ -79,24 +86,4 @@ SetWorkingDir, %A_ScriptDir%
             send, s
             send, {Enter}
             send, {Enter}
-            return
-
-
-			
-
-			/*
-
-			Keywait, x, D T3
-			If Errorlevel {
-				soundbeep
-				return
-			}
-			else {
-				soundbeep, 500, 500
-				send, {shift down}
-				send, {end}
-				send, !t
-				send, {shift up}
-			}
-			*/
 			return
