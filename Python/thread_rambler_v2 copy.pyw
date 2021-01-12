@@ -1,5 +1,6 @@
 
-# Thread Rambler 1.0
+
+# Thread Rambler 2.0
 # Written by TheTrueSquiward, idea by Raj. 
 
 # # Upcoming
@@ -39,8 +40,9 @@ def next_thread(filteredThreads, ent_currentThread):
     if i >= len(filteredThreads):
         i = 0
     
+    print(i)
+    print(filteredThreads)
     currentThread = filteredThreads[i]
-    currentThreadLabel = tk.Label(text=currentThread)
 
     ent_currentThread.delete(0, tk.END)
     ent_currentThread.insert(0, currentThread)
@@ -85,6 +87,7 @@ def filter_threads(tags):
 
 def review_threads():
     global win_reviewThreads
+
     
     # Create new window for thread review
     win_reviewThreads = tk.Toplevel()
