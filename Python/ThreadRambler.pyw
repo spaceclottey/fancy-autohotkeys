@@ -1,13 +1,15 @@
 
 
-# Thread Rambler 2.0
+# == Thread Rambler 2.0 ==
 # Written by TheTrueSquiward, idea by Raj. 
+
+# == Instructions ==
+# Run 'pip install keyboard' at command prompt (takes about 5 seconds)
 # Press ctrl+period to open the thread capturing window
+
 
 # # Upcoming
 # Email Capabilities
-
-
 # # Possible Additions
 # Priority sorting
 # instant addition to supermemo mail collection 
